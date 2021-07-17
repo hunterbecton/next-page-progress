@@ -55,9 +55,8 @@ export const Nav = () => {
                 <div className='hidden sm:block sm:ml-6'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
-                      <Link href={item.href}>
+                      <Link href={item.href} key={item.name}>
                         <a
-                          key={item.name}
                           className={classNames(
                             item.current
                               ? 'bg-gray-900 text-white'
